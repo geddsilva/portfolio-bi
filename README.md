@@ -14,6 +14,7 @@ Todos os projetos usam **dados fictícios**. Os painéis são públicos e intera
 |---|---|---|
 | Dashboard Financeiro, DRE | Receita líquida, margem de contribuição, EBITDA e lucro líquido em uma única visão, com análise horizontal e comparativos. | [Abrir painel](https://app.powerbi.com/view?r=eyJrIjoiYmU2M2UzYmEtOGJmNy00OTg2LTkyODgtY2FkOTRiYzk1ZDViIiwidCI6IjE4NTFiYTg5LWMwNDQtNDMzMy05NDA5LWQ4MGE3NGFmNWY0MiJ9) |
 | Painel de Performance e Faturamento | Faturamento por estado, canal, cultura e módulo, recorrência de clientes, evolução mensal e performance por vendedor. | [Abrir painel](https://app.powerbi.com/view?r=eyJrIjoiMWY1NDc3MjUtZDcwNS00ODAxLTkxODAtNGY5NGU0YWFlNTk3IiwidCI6IjE4NTFiYTg5LWMwNDQtNDMzMy05NDA5LWQ4MGE3NGFmNWY0MiJ9) |
+| Simulador Financeiro | Resultado real da operação com análise de sensibilidade: ajuste de quantidade, preço, custo variável e despesas fixas. | [Abrir painel](https://app.powerbi.com/view?r=eyJrIjoiZTEwMmU0NDItMGJiNS00ZTIyLWI5YzYtZmQyNWJiNTEzZmE5IiwidCI6IjE4NTFiYTg5LWMwNDQtNDMzMy05NDA5LWQ4MGE3NGFmNWY0MiJ9) |
 
 ---
 
@@ -66,3 +67,27 @@ Filtros por mês, canal, cultura, módulo, recorrência, vendedor e estado em to
 ![Calendário](assets/calendario.png)
 
 [Abrir o painel interativo](https://app.powerbi.com/view?r=eyJrIjoiMWY1NDc3MjUtZDcwNS00ODAxLTkxODAtNGY5NGU0YWFlNTk3IiwidCI6IjE4NTFiYTg5LWMwNDQtNDMzMy05NDA5LWQ4MGE3NGFmNWY0MiJ9)
+
+---
+
+## Simulador Financeiro
+
+![Visão Geral](assets/simulador-visao-geral.png)
+
+Simulador financeiro em Power BI, com dados fictícios, que parte do resultado real da operação e permite testar cenários.
+
+**Visão Geral:** receita operacional, margem de contribuição e % MC por mês, por fornecedor e por equipe de vendas.
+
+**Fluxo de caixa:** DRE mensal com análise vertical (AV) e horizontal (AH), e gráfico de cascata do lucro operacional.
+
+**Simulador:** análise de sensibilidade com ajuste de quantidade, preço unitário, custo variável e despesas fixas (e se o preço subisse 5%? e se as despesas caíssem 10%?), comparando o cenário com o resultado real.
+
+Filtros por mês, supervisor, vendedor e fornecedor.
+
+**Ferramentas:** Power BI, DAX, Power Query.
+
+![Fluxo de caixa](assets/simulador-fluxo-de-caixa.png)
+
+![Simulador](assets/simulador-cenarios.png)
+
+[Abrir o painel interativo](https://app.powerbi.com/view?r=eyJrIjoiZTEwMmU0NDItMGJiNS00ZTIyLWI5YzYtZmQyNWJiNTEzZmE5IiwidCI6IjE4NTFiYTg5LWMwNDQtNDMzMy05NDA5LWQ4MGE3NGFmNWY0MiJ9)

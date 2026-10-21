@@ -1,4 +1,4 @@
-# Gabriel Eloi | Portfólio de Business Intelligence
+# Gabriel Eloi Salvador | Portfólio de Business Intelligence
 
 Analista de Dados e Business Intelligence, com experiência nos segmentos financeiro e agronegócio.
 

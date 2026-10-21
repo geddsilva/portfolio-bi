@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabriel Eloi | Portfólio de Business Intelligence</title>
+<meta name="description" content="Portfólio de dashboards em Power BI de Gabriel Eloi, Analista de Dados e Business Intelligence. Todos os dados são fictícios.">
+<style>
+  :root {
+    --bg: #0d0d12;
+    --panel: #16161f;
+    --panel-2: #1c1c28;
+    --line: #2a2a3a;
+    --text: #e9e9f2;
+    --muted: #a3a3b8;
+    --accent: #7c5cdb;
+    --accent-2: #9b82ee;
+    --ok: #1fa971;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-2); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  header.top { padding: 56px 0 32px; border-bottom: 1px solid var(--line); }
+  header.top h1 { margin: 0 0 4px; font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: .01em; }
+  header.top .role { margin: 0 0 16px; color: var(--accent-2); font-weight: 600; font-size: 1.1rem; }
+  header.top p.lead { margin: 0 0 20px; color: var(--muted); max-width: 62ch; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-block; padding: 9px 16px; border-radius: 8px; text-decoration: none; font-weight: 600;
+    font-size: .95rem; border: 1px solid var(--line); background: var(--panel); color: var(--text); cursor: pointer;
+    font-family: inherit;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.primary:hover { background: #6a4bc4; }
+
+  .notice {
+    margin: 24px 0 0; padding: 12px 16px; border: 1px solid var(--line); border-left: 3px solid var(--ok);
+    background: var(--panel); border-radius: 8px; color: var(--muted); font-size: .95rem;
+  }
+
+  main { padding: 36px 0 64px; }
+  main > h2 { margin: 0 0 20px; font-size: 1.3rem; }
+
+  article.project {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 24px; margin-bottom: 28px;
+  }
+  article.project h3 { margin: 0 0 8px; font-size: 1.35rem; }
+  article.project .summary { margin: 0 0 18px; color: var(--muted); }
+  .pages { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 10px; }
+  .pages li { padding: 10px 14px; background: var(--panel-2); border-radius: 8px; }
+  .pages strong { color: var(--text); }
+  .meta { margin: 0 0 6px; color: var(--muted); font-size: .95rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; padding: 0; list-style: none; }
+  .tags li { font-size: .82rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent-2); }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+
+  .embed { display: none; margin-bottom: 20px; }
+  .embed.open { display: block; }
+  .embed .frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #000; }
+  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .embed small { display: block; margin-top: 8px; color: var(--muted); }
+
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .shots figure { margin: 0; }
+  .shots a { display: block; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots figcaption { margin-top: 6px; font-size: .85rem; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: .9rem; }
+
+  @media (max-width: 560px) {
+    article.project { padding: 16px; }
+    .embed .frame { aspect-ratio: 4 / 3; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Gabriel Eloi</h1>
+    <p class="role">Analista de Dados e Business Intelligence</p>
+    <p class="lead">Dashboards em Power BI, modelagem de dados, ETL e automação de processos, com experiência nos segmentos financeiro e agronegócio.</p>
+    <div class="links">
+      <a class="btn primary" href="https://linkedin.com/in/gabriel-eloi" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:geddsilva.eloi@gmail.com">Email</a>
+    </div>
+    <p class="notice">Todos os projetos deste portfólio usam dados fictícios. Os painéis abaixo são públicos e interativos: use os filtros e navegue pelas páginas.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2>Projetos</h2>
+    <div id="projects"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Gabriel Eloi, Bauru, SP, Brasil.</div>
+</footer>
+
+<script>
+/* Para adicionar um projeto novo, copie um bloco abaixo e troque os textos, o link e as imagens. */
+const PROJECTS = [
+  {
+    titulo: "Dashboard Financeiro | DRE",
+    resumo: "Dashboard de DRE financeira em Power BI, com dados fictícios, para acompanhar receita líquida, margem de contribuição, EBITDA e lucro líquido em uma única visão.",
+    paginas: [
+      { nome: "Visão Geral", desc: "indicadores principais com variação percentual e DRE mensal por conta gerencial, com análise horizontal (AH)." },
+      { nome: "Comparativo", desc: "lucro líquido do ano anterior contra o atual e de cada mês contra o mês anterior." },
+      { nome: "Detalhamento", desc: "evolução de receita, gastos e margem ao longo do ano, com margem de contribuição e EBITDA por mês." }
+    ],
+    extras: "Filtros por ano e mês em todas as páginas.",
+    ferramentas: ["Power BI", "DAX", "Power Query"],
+    link: "https://app.powerbi.com/view?r=eyJrIjoiYmU2M2UzYmEtOGJmNy00OTg2LTkyODgtY2FkOTRiYzk1ZDViIiwidCI6IjE4NTFiYTg5LWMwNDQtNDMzMy05NDA5LWQ4MGE3NGFmNWY0MiJ9",
+    imagens: [
+      { src: "assets/dre-visao-geral.png", alt: "Página Visão Geral do dashboard de DRE, com indicadores e tabela mensal", legenda: "Visão Geral" },
+      { src: "assets/dre-comparativo.png", alt: "Página Comparativo do dashboard de DRE, com lucro líquido ano anterior contra atual", legenda: "Comparativo" },
+      { src: "assets/dre-detalhamento.png", alt: "Página Detalhamento do dashboard de DRE, com evolução de receita, gastos e margens", legenda: "Detalhamento" }
+    ]
+  }
+];
+
+function el(tag, props, children) {
+  const n = document.createElement(tag);
+  Object.entries(props || {}).forEach(([k, v]) => {
+    if (k === "text") n.textContent = v;
+    else if (k === "class") n.className = v;
+    else n.setAttribute(k, v);
+  });
+  (children || []).forEach(c => n.appendChild(c));
+  return n;
+}
+
+function render(p) {
+  const art = el("article", { class: "project" });
+  art.appendChild(el("h3", { text: p.titulo }));
+  art.appendChild(el("p", { class: "summary", text: p.resumo }));
+
+  const ul = el("ul", { class: "pages" });
+  p.paginas.forEach(pg => {
+    const li = el("li");
+    li.appendChild(el("strong", { text: pg.nome + ": " }));
+    li.appendChild(document.createTextNode(pg.desc));
+    ul.appendChild(li);
+  });
+  art.appendChild(ul);
+
+  if (p.extras) art.appendChild(el("p", { class: "meta", text: p.extras }));
+  const tags = el("ul", { class: "tags", "aria-label": "Ferramentas" });
+  p.ferramentas.forEach(t => tags.appendChild(el("li", { text: t })));
+  art.appendChild(tags);
+
+  const embed = el("div", { class: "embed" });
+  const frameBox = el("div", { class: "frame" });
+  embed.appendChild(frameBox);
+  embed.appendChild(el("small", { text: "Se o painel não carregar, abra em uma nova aba pelo botão acima." }));
+
+  const actions = el("div", { class: "actions" });
+  const toggle = el("button", { class: "btn primary", type: "button", text: "Ver o painel aqui" });
+  let loaded = false;
+  toggle.addEventListener("click", () => {
+    if (!loaded) {
+      const f = el("iframe", { title: p.titulo, src: p.link, allowfullscreen: "true", loading: "lazy" });
+      frameBox.appendChild(f);
+      loaded = true;
+    }
+    const open = embed.classList.toggle("open");
+    toggle.textContent = open ? "Ocultar o painel" : "Ver o painel aqui";
+  });
+  actions.appendChild(toggle);
+  actions.appendChild(el("a", { class: "btn", href: p.link, target: "_blank", rel: "noopener", text: "Abrir em nova aba" }));
+  art.appendChild(actions);
+  art.appendChild(embed);
+
+  const shots = el("div", { class: "shots" });
+  p.imagens.forEach(im => {
+    const fig = el("figure");
+    const a = el("a", { href: im.src, target: "_blank", rel: "noopener" });
+    a.appendChild(el("img", { src: im.src, alt: im.alt, loading: "lazy" }));
+    fig.appendChild(a);
+    fig.appendChild(el("figcaption", { text: im.legenda }));
+    shots.appendChild(fig);
+  });
+  art.appendChild(shots);
+  return art;
+}
+
+const root = document.getElementById("projects");
+PROJECTS.forEach(p => root.appendChild(render(p)));
+</script>
+</body>
+</html>
